@@ -1,14 +1,14 @@
 /* -------------Index--------------- */
 body {
-    background-image:url(/assets/homepageBG.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  background-image: url(/assets/homepageBG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .foncenter {
-    text-align: center;
+  text-align: center;
 }
 
 .hero-section {
@@ -30,7 +30,7 @@ body {
 /* ------------------Navbar----------------- */
 
 .nav {
-    font-size: 35px;
+  font-size: 35px;
 
 }
 
@@ -44,11 +44,17 @@ body {
 /* ------------------Gaming Page------------ */
 
 .gamebod {
-    background-image: url(/assets/FPSBG_IMG.jpg);
+  background-image: url(/assets/FPSBG_IMG.jpg);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
 }
 
 .hero-section {
-  background-image: url('/images/gaming-bg.jpg'); /* Replace with your image */
+  background-image: url('/images/gaming-bg.jpg');
+  /* Replace with your image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
