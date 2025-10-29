@@ -1,0 +1,62 @@
+/* -------------Index--------------- */
+body {
+    background-image:url(/assets/homepageBG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.foncenter {
+    text-align: center;
+}
+
+.hero-section {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+}
+
+.hero-title {
+  font-size: 5rem;
+  font-weight: bold;
+  color: red;
+  text-shadow: 2px 2px 8px black;
+}
+
+/* ------------------Navbar----------------- */
+
+.nav {
+    font-size: 35px;
+
+}
+
+.nav-link.active {
+  color: red !important;
+  font-weight: bold;
+  border-bottom: 2px solid red;
+}
+
+
+/* ------------------Gaming Page------------ */
+
+.gamebod {
+    background-image: url(/assets/FPSBG_IMG.jpg);
+}
+
+.hero-section {
+  background-image: url('/images/gaming-bg.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+}
+
+.hero-section h1 {
+  z-index: 2;
+  text-shadow: 2px 2px 8px black;
+}
