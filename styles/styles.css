@@ -21,6 +21,7 @@ body {
     overflow-x: hidden;
     color: white;
     font-family: 'Orbitron', sans-serif;
+    font-style: oblique;
     position: relative;
     padding-bottom: 80px;
     margin: 0;
