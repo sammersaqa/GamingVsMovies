@@ -1,68 +1,161 @@
-/* -------------Index--------------- */
 body {
-  background-image: url(/assets/homepageBG.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+    background-image: url(/assets/homepageBG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .foncenter {
-  text-align: center;
-}
-
-.hero-section {
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  color: white;
+    text-align: center;
 }
 
 .hero-title {
-  font-size: 5rem;
-  font-weight: bold;
-  color: red;
-  text-shadow: 2px 2px 8px black;
+    font-size: 5rem;
+    font-weight: bold;
+    color: red;
+    text-shadow: 2px 2px 8px black;
 }
 
-/* ------------------Navbar----------------- */
-
 .nav {
-  font-size: 35px;
-
+    font-size: 35px;
 }
 
 .nav-link.active {
-  color: red !important;
-  font-weight: bold;
-  border-bottom: 2px solid red;
+    color: red !important;
+    font-weight: bold;
+    border-bottom: 2px solid red;
 }
 
+/* ================== Gaming Page ==================== */
 
-/* ------------------Gaming Page------------ */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
 
 .gamebod {
-  background-image: url(/assets/FPSBG_IMG.jpg);
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-
+    background-image: url(/assets/FPSBG_IMG.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: white; 
+    font-family: 'Orbitron', sans-serif;
+    position: relative;
+    padding-bottom: 80px; 
+    margin: 0;
+    padding-top: 0;
+    overflow-y: scroll;
 }
 
-.hero-section {
-  background-image: url('/images/gaming-bg.jpg');
-  /* Replace with your image */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  color: white;
+.container.my-5 {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 80px; 
+    max-width: 1600px; 
 }
 
-.hero-section h1 {
-  z-index: 2;
-  text-shadow: 2px 2px 8px black;
+.row.justify-content-center {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+}
+
+.col-md-4 {
+    flex: 0 0 auto;
+    width: 480px; 
+    padding: 10px 15px;
+}
+
+.card {
+    border: none !important;
+    border-radius: 0 !important;
+    background-color: transparent !important; 
+    height: 600px !important; 
+    position: relative !important; 
+    overflow: hidden !important; 
+}
+
+.warzone-card {
+    background: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) 40%, transparent 80%),
+        url('/assets/Warzone_IMG.jpg') no-repeat center center;
+    background-size: cover;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.7), 0 0 5px rgba(255, 0, 0, 0.5); 
+    border: 1px solid #ff0000;
+}
+
+.mw3-card {
+    background: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) 40%, transparent 80%),
+        url('/assets/MW3_IMG.jpg') no-repeat center center;
+    background-size: cover;
+    box-shadow: 0 0 25px rgba(0, 192, 255, 0.7), 0 0 5px rgba(0, 192, 255, 0.5); 
+    border: 1px solid #00c0ff;
+}
+
+.card-title-overlay {
+    z-index: 4 !important; 
+}
+
+.details-box {
+    bottom: 0 !important;
+    z-index: 3 !important;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+}
+
+.details-heading {
+    color: #00c0ff; 
+    font-size: 0.9em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 5px;
+}
+
+.details-heading.red-heading {
+    color: #ff0000; 
+}
+
+.details-item {
+    margin-bottom: 15px;
+}
+
+.item-title {
+    font-size: 1.05em;
+    font-weight: 700; 
+    margin-bottom: 2px;
+}
+
+.item-desc {
+    font-size: 0.75em;
+    color: #ccc;
+    line-height: 1.3;
+}
+
+.navbar.fixed-bottom {
+    background-color: rgba(10, 10, 10, 0.98) !important;
+    border-top: 2px solid #ff0000; 
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1em;
+    font-weight: 700;
+    padding: 0 30px;
+    color: rgba(255, 255, 255, 0.5) !important;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.navbar-nav .nav-link.active {
+    color: #ff0000 !important; 
+    text-shadow: 0 0 10px #ff0000; 
+}
+
+.navbar-nav .nav-link:not(.active):hover {
+    color: white !important;
 }
